@@ -1,17 +1,94 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Kin by Chiko">
+  <main>
+    <Hero />
+
+    <section class="home-feature">
+      <div class="home-feature-image">
+        <img src="/images/placeholders/conversation-2-l.jpg" alt="People gathered in conversation" />
+      </div>
+
+      <div class="home-feature-text">
+        <p class="eyebrow">Featured Conversation</p>
+        <h2>What kind of belonging are we making?</h2>
+        <p>
+          Longform interviews and visual storytelling rooted in culture, access,
+          identity, and creative practice.
+        </p>
+        <a href="/stories" class="text-link">Explore Stories →</a>
+      </div>
+    </section>
+
+    <section class="home-gathering">
+      <div>
+        <p class="eyebrow">Upcoming Gathering</p>
+        <h2>Kin Salon No. 1</h2>
+        <p>
+          A moderated evening of conversation, listening, and shared reflection.
+        </p>
+        <a href="/gatherings" class="button primary">View Gatherings</a>
+      </div>
+
+      <img src="/images/placeholders/connection-3-p.jpg" alt="Hands reaching toward each other" />
+    </section>
+
+    <section class="home-mission">
+      <p class="eyebrow">Mission</p>
+      <h2>
+        Story into relationship.<br />
+        Relationship into action.
+      </h2>
+    </section>
+
+    <section class="home-dispatches">
+      <div class="section-heading">
+        <p class="eyebrow">Latest Dispatches</p>
+        <h2>Recent notes from Kin</h2>
+      </div>
+
+      <div class="dispatch-grid">
+        <article>
+          <img src="/images/placeholders/portrait-1-p.jpg" alt="Portrait placeholder" />
+          <p class="eyebrow">Interview</p>
+          <h3>Creative practice and place</h3>
+        </article>
+
+        <article>
+          <img src="/images/placeholders/portrait-2-p.jpg" alt="Portrait placeholder" />
+          <p class="eyebrow">Dispatch</p>
+          <h3>Notes on access and belonging</h3>
+        </article>
+
+        <article>
+          <img src="/images/placeholders/conversation-1-l.jpg" alt="Conversation placeholder" />
+          <p class="eyebrow">Gathering</p>
+          <h3>A table for conversation</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-newsletter">
+      <h2>Join the Dispatch.</h2>
+      <p>Thoughtful stories, interviews, and gathering notes from Kin.</p>
+      <a href="/newsletter" class="button secondary">Subscribe</a>
+    </section>
+    <footer class="site-footer">
+  <div class="footer-nav">
+    <a href="/">Studio</a>
+    <a href="/concept-two">Journal</a>
+    <a href="/concept-three">Magazine</a>
+    <a href="/stories">Stories</a>
+    <a href="/gatherings">Gatherings</a>
+    <a href="/about">About</a>
+    <a href="/newsletter">Newsletter</a>
+    <a href="/contact">Contact</a>
+  </div>
+
+  <p class="footer-credit">© 2026 Kin by Chiko</p>
+</footer>
+  </main>
+</Layout>
