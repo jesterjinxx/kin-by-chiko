@@ -78,14 +78,14 @@ import Hero from "../components/Hero.astro";
     </section>
     <footer class="site-footer">
   <div class="footer-nav">
-    <a href="/">Studio</a>
-    <a href="/concept-two">Journal</a>
-    <a href="/concept-three">Magazine</a>
-    <a href="/stories">Stories</a>
-    <a href="/gatherings">Gatherings</a>
-    <a href="/about">About</a>
-    <a href="/newsletter">Newsletter</a>
-    <a href="/contact">Contact</a>
+    <a href={import.meta.env.BASE_URL}>Studio</a>
+    <a href={`${import.meta.env.BASE_URL}concept-two/`}>Journal</a>
+    <a href={`${import.meta.env.BASE_URL}concept-three/`}>Magazine</a>
+    <a href={`${import.meta.env.BASE_URL}stories/`}>Stories</a>
+    <a href={`${import.meta.env.BASE_URL}gatherings/`}>Gatherings</a>
+    <a href={`${import.meta.env.BASE_URL}about/`}>About</a>
+    <a href={`${import.meta.env.BASE_URL}newsletter/`}>Newsletter</a>
+    <a href={`${import.meta.env.BASE_URL}contact/`}>Contact</a>
   </div>
 
   <p class="footer-credit">© 2026 Kin by Chiko</p>
